@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	  <meta charset="utf-8" />	
+      <title>Bootstrap 模板</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+ 
+      <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+      <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+   	<!--超大屏幕-->
+    <div class="jumbotron text-center" style="margin: 0px;">
+    <div class="container">
+    		<h1>欢迎来到我的博客!</h1>
+    		<p>Hi! 很高兴能和你一起交流</p>
+    	</div>
+    </div>
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+    <div class="container-fluid"> 
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">我的博客</a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">主页</a></li>
+            <li><a href="#">博客</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    随笔 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">人生感悟</a></li>
+                    <li><a href="#">学习心得</a></li>
+                    <li><a href="#">生活技巧</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">进入我的日记</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+    <div class="col-sm-1"></div>
+    
+    <div class="col-sm-3" >
+    	<div class="caption">
+    		<h3>关于我</h3>
+    		<p>我的照片</p>
+    	</div>
+    	<div>
+    		<img src="img/柯南.jpg" />
+    	</div>
+    	<div class="caption">
+    		<p>身体虽然变小，但是头脑依然灵活，无所不知,业余爱好破案,的程序员。真相只有一个!!!</p>
+    	</div>
+    	<div class="caption">
+    		<h3>个人主页</h3>
+    		<p>大家好,我是一个名侦探,我的爱好是编程,平时业余时间偶尔喜欢带带小朋友装装13,破破案,哪里有死亡哪里就有我,人送外号"死神"</p>
+    	</div>
+        <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">编程天地</a></li>
+        <li><a href="#">悬疑惊悚</a></li>
+        <li><a href="#">密室杀人</a></li>
+        <li><a href="#">动漫次元</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-7">
+    	<div class="caption">
+    		<h3>Java</h3>
+    		<p>Java的简介以及作用</p>
+    	</div>
+    	<div>
+    		<img src="img/java.png" />
+    	</div>
+    	<div>
+    		<p>
+Java 最初是由 SUN 公司推出的，后来 SUN 公司被 Oracle 公司收购，Java 的版权也就归属了 Oracle。Java 的官方网址是 https://www.java.com/，你可以在此下载最新版本，关注最新资讯。
+
+Java 是一门半编译型的语言，Java 源码先被编译为字节码文件（中间文件），然后再由虚拟机（JVM）解释执行，这肯定比直接编译成二进制文件的运行速度要慢一些。
+
+不过 Java 经过了多年的性能调优，再加上即时编译技术（JIT）的加持，性能已经相当出色了，甚至成了传统编译器的竞争对手，某些情况下甚至还超出了传统编译器（整体上还是不及 C/C++ 的）。</p>
+    	</div>
+    	<div class="caption">
+    		<h3>CSS</h3>
+    		<p>CSS入门简介,讲解CSS中的基本样式</p>
+    	</div>
+    	<div>
+    		<img src="img/css.jpg" />
+    	</div>
+    	<div>
+    		<p>
+层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。 [1] 
+CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。</p>
+    	</div>
+    </div>
+
+    <div class="col-sm-12 jumbotron text-center" style="margin: 0px;">
+    <div class="container">
+    		<p>lizg&copy;1990-2020</p>
+    	</div>
+    </div>
+   </body>
+   <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+      <script src="js/jquery-1.11.0.js"></script>
+      <!-- 包括所有已编译的插件 -->
+      <script src="js/bootstrap.js"></script>
+</html>
